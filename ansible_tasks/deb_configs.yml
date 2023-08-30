@@ -1,0 +1,5 @@
+---
+- name: Copy tmux configuration
+  ansible.builtin.copy:
+    src: ../configuration_files/.tmux.conf
+    dest: ~/.tmux.conf

@@ -6,4 +6,8 @@
     - name: Install common packages
       ansible.builtin.import_tasks:
         file: ansible_tasks/deb_packages.yml
+
+    - name: Copy configuration files
+      ansible.builtin.import_tasks:
+        file: ansible_tasks/deb_configs.yml
         

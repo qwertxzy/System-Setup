@@ -13,6 +13,5 @@ Just a list of things I have in mind for this
 - Install chocolatey
 - Copy MS Terminal Config
 ### Linux (Debian)
-- Copy tmux.conf
 - Setup oh-my-zsh
 - Setup Ctrl+R for fzf
