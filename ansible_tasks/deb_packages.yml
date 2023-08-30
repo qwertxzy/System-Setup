@@ -1,0 +1,17 @@
+---
+- name: Update Cache and Upgrade all Packages
+  become: yes
+  apt:
+    update_cache: yes
+    upgrade: yes
+
+- name: Install commonly used packages
+  become: yes
+  package:
+    name:
+      - tmux
+      - rsync
+      - zsh
+      - fzf
+      - git
+    

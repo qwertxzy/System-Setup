@@ -1,0 +1,13 @@
+---
+- name: Windows Setup Playbook
+  hosts: localhost
+
+  tasks:
+    - name: Fix default taskbar settings
+      ansible.builtin.import_tasks:
+        file: ansible_tasks/win_taskbar.yml
+
+    - name: Install common software packages
+      ansible.builtin.import_tasks:
+        file: ansible_tasks/win_packages.yml
+        

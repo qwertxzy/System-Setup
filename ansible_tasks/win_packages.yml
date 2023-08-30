@@ -1,0 +1,10 @@
+---
+- Install chocolatey packages
+  chocolatey.chocolatey.win_chocolatey:
+    become: yes
+    name: "{{ item }}"
+    state: latest
+  loop:
+    - firefox
+    - powertoys
+    - microsoft-windows-terminal

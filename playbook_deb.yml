@@ -1,0 +1,9 @@
+---
+- name: Debian Setup Playbook
+  hosts: localhost
+
+  tasks:
+    - name: Install common packages
+      ansible.builtin.import_tasks:
+        file: ansible_tasks/deb_packages.yml
+        
